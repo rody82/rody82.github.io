@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rodisoft Carser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;  
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;  
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #00a200;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+ 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-242RMNGF1S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-242RMNGF1S');
+</script>
+
+<body id='home' style="background-color:#232534;color:lightgray;">
+
+
+<ul class="topnav">
+  <li><a href="index.html#home">Home</a></li>
+  <li><a href="index.html#news">News</a></li>
+  <li><a href="scores.html">High Scores</a></li>
+  <li><a class="active" href="download.html">Download</a></li>
+  <li><a href="/play/play.html">Play</a></li>
+</ul>
+
+
+
+<h1 style="font-size:calc(12px + 3vw)">Download</h1> 
+<div style="font-size:calc(12px + 1vw);">
+
+<ul>
+<li><a href="/play/play.html">Play in the browser</a></li>
+<li><a href="download/Carser_Setup.exe">Windows Installer</a></li>
+<li><a href="download/carser.zip">MS-DOS game</a></li>
+</ul>
+</div>
+</body>
+</html>
