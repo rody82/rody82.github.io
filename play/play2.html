@@ -5,12 +5,23 @@
 	    <title>Rodisoft Carser Online</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <style>
-         canvas, #jsdos {
+         canvas, .dosbox-container, #jsdos {
 		     width: 640px;  
              height: 400px;
              margin: 0;
              padding: 0;
          }
+		 dosbox-fullscreen-jsdosbox {
+			-webkit-box-shadow: 3px 3px 9px 0 rgba(0,0,0,.3);
+			box-shadow: 3px 3px 9px 0 rgba(0,0,0,.3);
+		}
+		.st-loader::before, .st-loader::after {
+			border: none !important;
+			display: none !important;
+		}
+		.st-loader .equal {
+			background: transparent !important;
+		}
 		 @media (min-width: 640px) {
 			.qwerty-key,
 			.qwerty-container {
@@ -101,14 +112,11 @@ a:active {
 </ul>
 
 
-
-
-		
-        <script src="js-dos.js"></script>
-        <link href="js-dos.css" rel="stylesheet">
-    </head>
-    <body id='home' style="background-color:black;">     
-        <canvas id="canvas" width="320" height="200"></canvas>		
+  <script src="js-dos.js"></script>
+  <link href="js-dos.css" rel="stylesheet">
+</head>
+<body id='home' style="background-color:black;">     
+  <canvas id="canvas" width="320" height="200"></canvas>		
         <script>
 		 Dos(document.getElementById("canvas")).run("carser.jsdos")
         </script>		
