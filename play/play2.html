@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+    <head>
+	    <title>Rodisoft Carser Online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style>
+         canvas, #jsdos {
+		     width: 640px;  
+             height: 400px;
+             margin: 0;
+             padding: 0;
+         }
+		 @media (min-width: 640px) {
+			.qwerty-key,
+			.qwerty-container {
+				display: none;
+			}
+		}
+        </style>
+		<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;  
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;  
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #00a200;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+a:link {
+  color: lightgray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-242RMNGF1S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-242RMNGF1S');
+</script>
+
+<body id='home' style="background-color:#232534;color:lightgray;">
+
+
+<ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="scores.html">High Scores</a></li>
+  <li><a href="download.html">Download</a></li>
+  <li><a class="active" href="play/play.html">Play</a></li>
+</ul>
+
+
+
+
+		
+        <script src="js-dos.js"></script>
+        <link href="js-dos.css" rel="stylesheet">
+    </head>
+    <body id='home' style="background-color:black;">     
+        <canvas id="canvas" width="320" height="200"></canvas>		
+        <script>
+		 Dos(document.getElementById("canvas")).run("carser.jsdos")
+        </script>		
+		<br>	
+<button type="button" class="btn dosfont8 dosbox-fullscreen-jsdosbox" onclick="ci.fullscreen()"> >>> Go full screen <<< </button>		
+<div style="font-size:16px;">
+<h1>Controls</h1> 
+<ul>
+<li>Up - Accelerate</li>
+<li>Down - Break and Reverse</li>
+<li>Left/Right - Turn the car</li>
+<li>Space - Handbrake</li>
+<li>Enter - Confirm, use Hotel, start/stop the ferry boat</li>
+<li>Tab - Minimap</li>
+<li>Esc - Exit</li>
+<li>R - Restart level / reset high scores</li>
+<li>D - Destruct car</li>
+<li>F - Show/hide fps (22 is full speed)</li>
+<li>H - Honk</li>
+<li>P - Pause</li>
+<br>
+<li>Replay: select a slot on the high scores screen with the up/down arrows</li>
+<li>Reset high scores: press R on the high scores screen</li>
+</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
